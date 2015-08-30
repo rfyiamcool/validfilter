@@ -6,12 +6,12 @@ def read(fname):
 
 setup(
         name = "validfilter",
-        version = "1.0",
+        version = "2.0",
         author = "ruifengyun",
         author_email = "rfyiamcool@163.com",
         description = "A simple validation module ,support regex",
         license = "MIT",
-        keywords = "validation dictionary validate valid list json request validator",
+        keywords = "valid list tunple json data",
         url = "https://github.com/rfyiamcool",
         packages = find_packages(),
         long_description = read('README.md'),
