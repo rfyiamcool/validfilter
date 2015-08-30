@@ -48,3 +48,19 @@ kid = {
 
 print checkdata(template, kid) 
 ```
+
+#### Run Result
+```
+python test.py
+xiaorui fengyun from xiaorui.cc
+http://.* http://xiaorui.cc
+.* 123
+.* zhangbin
+.* liudehua
+.* nima
+ying liliying
+\w* beijing
+True
+```
+
+
