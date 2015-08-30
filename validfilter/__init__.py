@@ -3,7 +3,6 @@ import re
 def checkdata(template, uncheckdatad, quiet=False, **kwargs):
     try:
         if isinstance(template, tuple):
-            # We have multiple options on the template level.
             valid = False
             for template_option in template:
                 try:
@@ -35,17 +34,14 @@ def checkdata(template, uncheckdatad, quiet=False, **kwargs):
         elif isinstance(template, type):
             # Template declared a type. Time to compare values.
             print template,uncheckdatad
-            #re.search(template,)
             if template in (str, unicode) and kwargs.get('fuzzy_string_typing'):
                 template = basestring
-            #if isinstance(uncheckdatad, template):
             if re.search(template,str(uncheckdatad)):
                 return True
             else:
                 raise FailedValidationError("{0} is not of type {1}".format(uncheckdatad, template))
 
         else:
-            print template,uncheckdatad
             if re.search(template,str(uncheckdatad)) or template is None:
                 return True
             else:
