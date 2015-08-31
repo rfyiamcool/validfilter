@@ -2,11 +2,20 @@
 
 ## 简单描述
 
-一个用来验证数据格式的模块,已经加入了正则表达式的识别，后期会加入具体某个KEY的是否验证的标示
+一个用来验证数据格式的模块,已经加入了正则表达式的识别，后期会加入具体某个KEY的是否需要验证的标示.
 
 ## 安装方法
+方法1.
+```
+pip install validfilter
+```
 
-shell~$ pip install validfilter
+方法2
+```
+git clone git@github.com:rfyiamcool/validfilter.git
+cd validfilter
+python setup.py install
+```
 
 ## 使用方法
 
@@ -63,4 +72,6 @@ ying liliying
 True
 ```
 
+感谢使用，validfilter一开始是用来验证rest post api过来的表单，后来在各个分布式RPC系统中使用验证各方的数据准确性。
 
+END... ...

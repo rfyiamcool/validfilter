@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
         name = "validfilter",
-        version = "2.0",
+        version = "3.0",
         author = "ruifengyun",
         author_email = "rfyiamcool@163.com",
         description = "A simple validation module ,support regex",
