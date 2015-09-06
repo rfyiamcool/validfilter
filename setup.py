@@ -11,11 +11,10 @@ setup(
         author_email = "rfyiamcool@163.com",
         description = "A simple validation module ,support regex",
         license = "MIT",
-        keywords = "valid list tunple json data",
+        keywords = ["valid list tunple json data","fengyun","ruifengyun"],
         url = "https://github.com/rfyiamcool",
         packages = find_packages(),
         long_description = read('README.md'),
-        keywords = ["valid key value","fengyun","ruifengyun"],
         classifiers = [
              'Development Status :: 2 - Pre-Alpha',
              'Intended Audience :: Developers',
