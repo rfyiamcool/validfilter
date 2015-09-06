@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
         name = "validfilter",
-        version = "3.0",
+        version = "3.1",
         author = "ruifengyun",
         author_email = "rfyiamcool@163.com",
         description = "A simple validation module ,support regex",
@@ -15,9 +15,14 @@ setup(
         url = "https://github.com/rfyiamcool",
         packages = find_packages(),
         long_description = read('README.md'),
+        keywords = ["valid key value","fengyun","ruifengyun"],
         classifiers = [
-            'Topic :: Utilities',
-            'License :: OSI Approved :: MIT License'
-            ]
-        )
+             'Development Status :: 2 - Pre-Alpha',
+             'Intended Audience :: Developers',
+             'License :: OSI Approved :: MIT License',
+             'Programming Language :: Python :: 2.7',
+             'Programming Language :: Python :: 3.0',
+             'Topic :: Software Development :: Libraries :: Python Modules',
+        ]
+)
 
